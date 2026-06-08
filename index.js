@@ -4,6 +4,7 @@ const pool = require('./db');
 const app = express();
 
 app.use(express.json());
+app.use(express.static('public'));
 
 // Ruta Hola Mundo
 app.get('/hola-mundo', (req, res) => {
