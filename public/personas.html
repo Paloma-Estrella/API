@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Personas</title>
+
+<link href="./wwwroot/css/bootstrap.min.css" rel="stylesheet">
+<link href="./wwwroot/css/bootstrap-icons.min.css" rel="stylesheet">
+
+<script src="./wwwroot/js/bootstrap.bundle.min.js"></script>
+<script src="./wwwroot/js/jquery-4.0.0.min.js"></script>
+<script src="./wwwroot/js/personas.js"></script>
+
+</head>
+
+<body>
+
+<div class="container-fluid">
+
+<div class="row">
+
+<!-- MENÚ LATERAL -->
+<div class="col-2 bg-primary text-white vh-100">
+
+<h3 class="mt-4">ISC</h3>
+
+<hr>
+
+<ul class="nav flex-column">
+
+<li class="nav-item mb-3">
+<a class="nav-link text-white" href="index.html">
+<i class="bi bi-house"></i>
+Inicio
+</a>
+</li>
+
+<li class="nav-item mb-3">
+<a class="nav-link text-white" href="productos.html">
+<i class="bi bi-cart"></i>
+Productos
+</a>
+</li>
+
+<li class="nav-item mb-3">
+<a class="nav-link text-white fw-bold" href="personas.html">
+<i class="bi bi-people"></i>
+Personas
+</a>
+</li>
+
+</ul>
+
+</div>
+
+<!-- CONTENIDO -->
+<div class="col-10">
+
+<div class="container mt-4">
+
+<h2>Gestión de Personas</h2>
+
+<hr>
+
+<div id="personas" class="row"></div>
+
+<div class="row mt-4">
+
+<div class="col-md-4">
+<input
+type="text"
+id="nombrePersona"
+class="form-control"
+placeholder="Nombre">
+</div>
+
+<div class="col-md-4">
+<input
+type="number"
+id="edadPersona"
+class="form-control"
+placeholder="Edad">
+</div>
+
+<div class="col-md-4">
+<input
+type="email"
+id="correoPersona"
+class="form-control"
+placeholder="Correo">
+</div>
+
+</div>
+
+<div class="mt-3">
+
+<button
+class="btn btn-primary"
+onclick="agregarPersona();">
+
+Guardar Persona
+
+</button>
+
+<button
+class="btn btn-success"
+onclick="getPersonas();">
+
+Obtener Personas
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

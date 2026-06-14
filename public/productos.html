@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <title>Productos</title>
+
+    <link href="./wwwroot/css/style.css" rel="stylesheet">
+    <link href="./wwwroot/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./wwwroot/css/bootstrap-icons.min.css">
+
+    <script src="./wwwroot/js/bootstrap.bundle.min.js"></script>
+    <script src="./wwwroot/js/jquery-4.0.0.min.js"></script>
+    <script src="./wwwroot/js/script.js"></script>
+</head>
+
+<body>
+
+<div class="container-fluid">
+
+    <div class="row">
+
+        <!-- MENÚ LATERAL -->
+        <div class="col-2 bg-primary text-white vh-100">
+
+            <h3 class="mt-4">ISC</h3>
+
+            <hr>
+
+            <ul class="nav flex-column">
+
+                <li class="nav-item mb-3">
+                    <a class="nav-link text-white" href="index.html">
+                        <i class="bi bi-house"></i>
+                        Inicio
+                    </a>
+                </li>
+
+                <li class="nav-item mb-3">
+                    <a class="nav-link text-white fw-bold" href="productos.html">
+                        <i class="bi bi-cart"></i>
+                        Productos
+                    </a>
+                </li>
+
+                <li class="nav-item mb-3">
+                    <a class="nav-link text-white" href="personas.html">
+                        <i class="bi bi-people"></i>
+                        Personas
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- CONTENIDO -->
+        <div class="col-10">
+
+            <main id="content" class="container pt-4">
+
+                <h2 class="mb-4">Gestión de Productos</h2>
+
+                <div id="productos" class="row">
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+
+                        <div class="d-flex justify-content-between pt-3">
+
+                            <button class="btn btn-outline-success" onclick="limpiar();">
+                                <i class="bi bi-arrow-counterclockwise fw-bold fs-5 pe-2"></i>
+                                Limpiar
+                            </button>
+
+                            <button class="btn btn-outline-primary" onclick="getProducts();">
+                                <i class="bi bi-cart4 fw-bold fs-5 pe-2"></i>
+                                Obtener productos
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row g-3 mt-5">
+
+                    <div class="col-sm-4">
+                        <input
+                            class="form-control"
+                            type="text"
+                            id="nombreProducto"
+                            placeholder="Nombre del producto">
+                    </div>
+
+                    <div class="col-sm-4">
+                        <input
+                            class="form-control"
+                            type="text"
+                            id="precioProducto"
+                            placeholder="Precio">
+                    </div>
+
+                    <div class="col-sm-4">
+
+                        <button
+                            class="btn btn-sm btn-outline-primary"
+                            onclick="agregarProducto();">
+
+                            <i class="bi bi-cart4 fw-bold fs-5 pe-2"></i>
+                            Guardar producto
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
